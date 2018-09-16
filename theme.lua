@@ -14,7 +14,7 @@ local os = { getenv = os.getenv }
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
-theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/will-powerarrow-dark"
+theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/will"
 theme.wallpaper                                 = theme.dir .. "/wall1.png"
 theme.font                                      = "xos4 Terminus Bold 9"
 theme.fg_normal                                 = "#918DA2"
