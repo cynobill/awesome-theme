@@ -203,8 +203,8 @@ class BarGraph():
 			context.translate(-1.0,0.0)
 		
 		# confine drawing to the widget		
-		context.rectangle(0.0,0.0,1.0,1.0)
-		context.clip()		
+		#context.rectangle(0.0,0.0,1.0,1.0)
+		#context.clip()		
 
 		line_w = self._calc_bar_width()
 		
@@ -230,12 +230,12 @@ class BarGraph():
 						self.border_color[1],
 						self.border_color[2],
 						self.border_color[3])
-		context.set_line_width(self.border_width)
-		context.rectangle(	self.x,
-					self.y,
-					self.w,
-					self.h)
-		context.stroke()
+			context.set_line_width(self.border_width)
+			context.rectangle(	self.x,
+						self.y,
+						self.w,
+						self.h)
+			context.stroke()
 
 		self._setup_context(context)
 		self._update()
